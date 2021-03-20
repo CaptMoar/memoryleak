@@ -1,0 +1,8 @@
+# Modulos
+node_modules
+
+# dependencies
+/node_modules
+
+# misc
+.env
