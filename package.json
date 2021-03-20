@@ -7,11 +7,14 @@
     "type": "git",
     "url": "git+https://github.com/CaptMoar/memoryleak.git"
   },
+  "scripts": {
+    "start": "node index.js"
+  },
   "keywords": [
     "memory",
     "leak"
   ],
-  "type": "module",
+
   "author": "Sebastian Diaz",
   "license": "ISC",
   "bugs": {
@@ -19,6 +22,9 @@
   },
   "homepage": "https://github.com/CaptMoar/memoryleak#readme",
   "dependencies": {
-    "moment": "^2.29.1"
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.1",
+    "sqlite": "^4.0.19",
+    "sqlite3": "^5.0.2"
   }
 }
