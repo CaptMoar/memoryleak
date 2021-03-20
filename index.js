@@ -56,5 +56,3 @@ let interval = setInterval(() => {
 let handler = setTimeout(() => {
     clearInterval(interval);
 }, eventEmitter.emit('disconnect') , config.MIN_DISCONNECT * 1000 * 60);
-
-
