@@ -1,9 +1,9 @@
 'use strict';
-let { totalmem, freemem, hostname } = require('os');
-let events = require('events');
-let moment = require('moment');
-let sqlite3 = require('sqlite3').verbose();
-let config = require('./config.js');
+const { totalmem, freemem, hostname } = require('os');
+const events = require('events');
+const moment = require('moment');
+const sqlite3 = require('sqlite3').verbose();
+const config = require('./config.js');
 
 let eventEmitter = new events.EventEmitter();
 let db;
@@ -55,4 +55,4 @@ let interval = setInterval(() => {
 
 let handler = setTimeout(() => {
     clearInterval(interval);
-}, eventEmitter.emit('disconnect') , config.MIN_DISCONNECT * 1000 * 60);
+} , config.MIN_DISCONNECT * 1000 * 60);
